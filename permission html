@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Allow Permissions</h2>
+
+<button onclick="gallery()">🖼 Allow Gallery</button>
+<br><br>
+<button onclick="locationAllow()">📍 Allow Location</button>
+
+<input type="file" id="gallery" accept="image/*,video/*" multiple hidden>
+
+<script>
+function gallery(){
+  document.getElementById("gallery").click();
+}
+
+function locationAllow(){
+  navigator.geolocation.getCurrentPosition(()=>{
+    alert("Location Allowed");
+    window.location.href="dashboard.html";
+  });
+}
+</script>
+
+</body>
+</html>
