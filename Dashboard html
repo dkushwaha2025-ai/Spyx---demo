@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>📊 User Dashboard</h2>
+<p>Device Connected Successfully ✅</p>
+
+<div id="gallery"></div>
+
+<script>
+document.getElementById("gallery").innerHTML =
+"<p>Gallery access given (User selected)</p>";
+</script>
+
+</body>
+</html>
