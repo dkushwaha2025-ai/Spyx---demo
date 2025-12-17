@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Monitor</title>
+</head>
+<body>
+
+<h2>Welcome</h2>
+<p>Click to continue</p>
+
+<button onclick="login()">Continue</button>
+
+<script>
+function login(){
+  localStorage.setItem("login","true");
+  window.location.href="permission.html";
+}
+</script>
+
+</body>
+</html>
